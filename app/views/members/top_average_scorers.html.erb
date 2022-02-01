@@ -1,0 +1,6 @@
+<h1>Leader Board</h1>
+<ol>
+	<% @top_average_scorers.each do |member| %>
+		<li> <%= Member.find(member.member_id).name %> - <%= member.average_score.to_i %> </li>
+	<% end %>
+</ol>

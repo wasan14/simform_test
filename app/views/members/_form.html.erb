@@ -1,0 +1,25 @@
+<% if member.errors.any? %>
+  <% member.errors.full_messages.each do |message| %>
+    <p><%= message %></p>
+  <% end %>
+<% end %>
+<%= form_with model: member do |f| %>
+  <div>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+    <%= f.label :contact_number %><br>
+    <%= f.text_field :contact_number %>
+  </div>
+  
+  <div>
+    <%= f.label :age %><br>
+    <%= f.text_field :age %>
+  </div>
+
+  <div>
+  	<%= f.submit %>	
+  </div>
+<% end %>
