@@ -1,24 +1,20 @@
-# README
+Release Note - Member Games Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Features Implemented
 
-Things you may want to cover:
+1. A member’s profile screen showing their number of wins, number of losses, average score and highest score,when and where it was scored, and against whom.
 
-* Ruby version
+url - localhost:3000/members/:id
 
-* System dependencies
+2. Interface to create and edit a member.
 
-* Configuration
+url for new- localhost:3000/members/new
 
-* Database creation
+url for edit - localhost:3000/members/:id/edit
 
-* Database initialization
+3. A leader board screen to list the members with the top 10 average scores, for those
+members who have played at least 10 matches.
 
-* How to run the test suite
+url - localhost:3000/members/top_average_scorers
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+4. As per security is concerned we are using authenticity token and strong parameters for preventing sql injections and csfr attacks.
