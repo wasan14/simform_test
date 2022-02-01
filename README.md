@@ -18,3 +18,6 @@ members who have played at least 10 matches.
 url - localhost:3000/members/top_average_scorers
 
 4. As per security is concerned we are using authenticity token and strong parameters for preventing sql injections and csfr attacks.
+
+And for Database schema defination plz check schema.rb file
+
